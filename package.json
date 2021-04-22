@@ -6,6 +6,7 @@
   "types": "./typings.d.ts",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib --ignore '**/__tests__/**'",
+    "prepare": "npm run build",
     "flow:start": "flow server",
     "flow:stop": "flow stop",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
